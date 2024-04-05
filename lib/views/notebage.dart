@@ -8,6 +8,9 @@ class Notepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Column(children: [
+        SizedBox(
+          height: 50,
+        ),
         Customappbare(),
       ]),
     );

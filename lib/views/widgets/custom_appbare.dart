@@ -6,6 +6,7 @@ class Customappbare extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           'Notes',
@@ -13,7 +14,22 @@ class Customappbare extends StatelessWidget {
             fontSize: 30,
           ),
         ),
+        Customicon(),
       ],
+    );
+  }
+}
+
+class Customicon extends StatelessWidget {
+  const Customicon({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Icon(
+        Icons.search,
+        size: 30,
+      ),
     );
   }
 }
