@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:noteapp/views/widgets/custom_icon.dart';
 
 class Customappbare extends StatelessWidget {
   const Customappbare({super.key});
@@ -16,20 +17,6 @@ class Customappbare extends StatelessWidget {
         ),
         Customicon(),
       ],
-    );
-  }
-}
-
-class Customicon extends StatelessWidget {
-  const Customicon({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Icon(
-        Icons.search,
-        size: 30,
-      ),
     );
   }
 }
