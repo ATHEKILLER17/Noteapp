@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Customicon extends StatelessWidget {
-  const Customicon({super.key});
-
+  const Customicon({super.key, required this.icon});
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,8 +13,8 @@ class Customicon extends StatelessWidget {
         shape: BoxShape.rectangle,
         color: Colors.white.withOpacity(0.2),
       ),
-      child: const Icon(
-        Icons.search,
+      child: Icon(
+        icon,
         size: 30,
       ),
     );

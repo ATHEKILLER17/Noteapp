@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+import 'package:noteapp/views/widgets/custom_appbare.dart';
+
+class Editview extends StatelessWidget {
+  const Editview({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Padding(
+        padding: EdgeInsets.only(top: 8, left: 16, right: 16, bottom: 16),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 50,
+            ),
+            Customappbare(
+              name: 'Edit',
+              icon: Icons.check,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

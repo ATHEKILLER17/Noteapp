@@ -2,20 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:noteapp/views/widgets/custom_icon.dart';
 
 class Customappbare extends StatelessWidget {
-  const Customappbare({super.key});
-
+  const Customappbare({super.key, required this.name, required this.icon});
+  final String name;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'Notes',
-          style: TextStyle(
+          name,
+          style: const TextStyle(
             fontSize: 30,
           ),
         ),
-        Customicon(),
+        Customicon(icon: icon),
       ],
     );
   }

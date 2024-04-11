@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:noteapp/views/widgets/Note_listview.dart';
+import 'package:noteapp/views/widgets/addnoteiteminsheet.dart';
 import 'package:noteapp/views/widgets/custom_appbare.dart';
-import 'package:noteapp/views/widgets/custom_notegen.dart';
 
 class Notepage extends StatelessWidget {
   const Notepage({super.key});
@@ -24,19 +24,13 @@ class Notepage extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          Customappbare(),
+          Customappbare(
+            name: 'Note',
+            icon: Icons.note_add,
+          ),
           Expanded(child: Notelistview()),
         ]),
       ),
     );
-  }
-}
-
-class Addnoteitem extends StatelessWidget {
-  const Addnoteitem({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
