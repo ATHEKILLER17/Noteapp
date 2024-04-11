@@ -26,7 +26,7 @@ class Notepage extends StatelessWidget {
           ),
           Customappbare(
             name: 'Note',
-            icon: Icons.note_add,
+            icon: Icons.search,
           ),
           Expanded(child: Notelistview()),
         ]),

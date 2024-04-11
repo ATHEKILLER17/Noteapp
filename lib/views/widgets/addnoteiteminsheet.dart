@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:noteapp/views/widgets/custombutton.dart';
+import 'package:noteapp/views/widgets/customtextfield.dart';
 
 class Addnoteitem extends StatelessWidget {
   const Addnoteitem({super.key});
@@ -17,25 +19,12 @@ class Addnoteitem extends StatelessWidget {
             height: 15,
           ),
           Customtextfield(name: 'Content', maxlines: 5),
+          SizedBox(
+            height: 50,
+          ),
+          Custombutton(),
         ],
       ),
     );
-  }
-}
-
-class Customtextfield extends StatelessWidget {
-  const Customtextfield({super.key, this.maxlines, required this.name});
-  final int? maxlines;
-  final String name;
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-        maxLines: maxlines,
-        decoration: InputDecoration(
-          hintText: name,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8),
-          ),
-        ));
   }
 }

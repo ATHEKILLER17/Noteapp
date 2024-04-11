@@ -15,7 +15,7 @@ class Noteapp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       debugShowCheckedModeBanner: false,
-      home: Notepage(),
+      home: const Notepage(),
     );
   }
 }
